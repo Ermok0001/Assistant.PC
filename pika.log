@@ -1,0 +1,552 @@
+2026-05-13 18:37:27,051 | INFO | Imported existing <module 'comtypes.gen' from 'C:\\Users\\Админ\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-13 18:37:27,052 | INFO | Using writeable comtypes cache directory: 'C:\Users\Админ\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-05-13 18:37:27,155 | INFO | Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: Typelib different than module
+2026-05-13 18:37:27,158 | INFO | # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2026-05-13 18:37:27,270 | INFO | # Generating comtypes.gen.SpeechLib
+2026-05-13 18:37:29,530 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-13 18:37:29,540 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-13 18:37:29,704 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-13 18:37:34,418 | INFO | HEARD: все системы на связи
+2026-05-13 18:37:36,447 | INFO | HEARD: вашей команды
+2026-05-13 18:37:41,784 | INFO | HEARD: пика открой chrome
+2026-05-13 18:37:41,787 | INFO | COMMAND: открой chrome
+2026-05-13 18:37:41,788 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:37:42,060 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:37:42,060 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:37:42,060 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:37:47,767 | INFO | HEARD: пика режим игры
+2026-05-13 18:37:47,768 | INFO | COMMAND: режим игры
+2026-05-13 18:37:47,769 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-13 18:38:20,184 | INFO | Imported existing <module 'comtypes.gen' from 'C:\\Users\\Админ\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-05-13 18:38:20,185 | INFO | Using writeable comtypes cache directory: 'C:\Users\Админ\AppData\Local\Programs\Python\Python313\Lib\site-packages\comtypes\gen'
+2026-05-13 18:38:21,991 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-13 18:38:21,991 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-13 18:38:22,067 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-13 18:38:31,307 | INFO | HEARD: игры
+2026-05-13 18:38:35,153 | INFO | HEARD: пика режим игры
+2026-05-13 18:38:35,155 | INFO | COMMAND: режим игры
+2026-05-13 18:38:35,157 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-13 18:38:40,386 | INFO | HEARD: довольно быстро да
+2026-05-13 18:38:42,255 | INFO | HEARD: режим отдыха
+2026-05-13 18:38:46,546 | INFO | HEARD: пика режим отдыха
+2026-05-13 18:38:46,548 | INFO | COMMAND: режим отдыха
+2026-05-13 18:38:46,550 | INFO | SPEAK: Режим отдыха запущен. Приятного просмотра.
+2026-05-13 18:38:54,487 | INFO | HEARD: нормально так что там ещё
+2026-05-13 18:38:56,534 | INFO | HEARD: яркость 7
+2026-05-13 18:39:02,115 | INFO | HEARD: пика яркость
+2026-05-13 18:39:02,116 | INFO | COMMAND: яркость
+2026-05-13 18:39:02,201 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:02,230 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-13 18:39:08,737 | INFO | HEARD: пика яркость максиму
+2026-05-13 18:39:08,738 | INFO | COMMAND: яркость максиму
+2026-05-13 18:39:08,795 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:08,827 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-13 18:39:12,348 | INFO | HEARD: пика яркость
+2026-05-13 18:39:12,349 | INFO | COMMAND: яркость
+2026-05-13 18:39:12,404 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:12,434 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-13 18:39:15,569 | INFO | HEARD: пика яркость
+2026-05-13 18:39:15,571 | INFO | COMMAND: яркость
+2026-05-13 18:39:15,621 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:15,651 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-13 18:39:20,193 | INFO | HEARD: пика яркость
+2026-05-13 18:39:20,195 | INFO | COMMAND: яркость
+2026-05-13 18:39:20,242 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:20,271 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-13 18:39:25,871 | INFO | HEARD: пика громкость тише
+2026-05-13 18:39:25,872 | INFO | COMMAND: громкость тише
+2026-05-13 18:39:25,884 | ERROR | set_volume error: 'AudioDevice' object has no attribute 'Activate'
+2026-05-13 18:39:25,884 | INFO | SPEAK: Громкость установлена на 50 процентов.
+2026-05-13 18:39:29,493 | INFO | HEARD: пика тише
+2026-05-13 18:39:29,494 | INFO | COMMAND: тише
+2026-05-13 18:39:29,495 | INFO | SPEAK: Убавляю громкость.
+2026-05-13 18:39:34,013 | INFO | HEARD: пика громче
+2026-05-13 18:39:34,015 | INFO | COMMAND: громче
+2026-05-13 18:39:34,016 | INFO | SPEAK: Прибавляю громкость.
+2026-05-13 18:39:36,806 | INFO | HEARD: пика громче
+2026-05-13 18:39:36,807 | INFO | COMMAND: громче
+2026-05-13 18:39:36,808 | INFO | SPEAK: Прибавляю громкость.
+2026-05-13 18:39:40,460 | INFO | HEARD: пика яр
+2026-05-13 18:39:40,461 | INFO | COMMAND: яр
+2026-05-13 18:39:40,462 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:39:40,732 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:39:40,736 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:39:40,736 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:39:47,520 | INFO | HEARD: яркость 90
+2026-05-13 18:39:50,985 | INFO | HEARD: пика яркость
+2026-05-13 18:39:50,986 | INFO | COMMAND: яркость
+2026-05-13 18:39:51,071 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:51,102 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-13 18:39:55,159 | INFO | HEARD: пика яркость 100
+2026-05-13 18:39:55,160 | INFO | COMMAND: яркость 100
+2026-05-13 18:39:55,220 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:55,255 | INFO | SPEAK: Яркость установлена на 100 процентов.
+2026-05-13 18:39:59,164 | INFO | HEARD: пика яркость 90
+2026-05-13 18:39:59,166 | INFO | COMMAND: яркость 90
+2026-05-13 18:39:59,243 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:39:59,271 | INFO | SPEAK: Яркость установлена на 90 процентов.
+2026-05-13 18:40:02,884 | INFO | HEARD: пика яркость
+2026-05-13 18:40:02,886 | INFO | COMMAND: яркость
+2026-05-13 18:40:02,950 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:40:02,982 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-13 18:40:06,254 | INFO | HEARD: пика яркость 40
+2026-05-13 18:40:06,256 | INFO | COMMAND: яркость 40
+2026-05-13 18:40:06,339 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:40:06,371 | INFO | SPEAK: Яркость установлена на 40 процентов.
+2026-05-13 18:40:09,258 | INFO | HEARD: пика яркость 10
+2026-05-13 18:40:09,260 | INFO | COMMAND: яркость 10
+2026-05-13 18:40:09,334 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:40:09,367 | INFO | SPEAK: Яркость установлена на 10 процентов.
+2026-05-13 18:40:12,566 | INFO | HEARD: пика яркость 100
+2026-05-13 18:40:12,568 | INFO | COMMAND: яркость 100
+2026-05-13 18:40:12,622 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:40:12,655 | INFO | SPEAK: Яркость установлена на 100 процентов.
+2026-05-13 18:40:16,216 | INFO | HEARD: пика яркость 90
+2026-05-13 18:40:16,217 | INFO | COMMAND: яркость 90
+2026-05-13 18:40:16,286 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-13 18:40:16,330 | INFO | SPEAK: Яркость установлена на 90 процентов.
+2026-05-13 18:40:21,782 | INFO | HEARD: пика открой pres
+2026-05-13 18:40:21,783 | INFO | COMMAND: открой pres
+2026-05-13 18:40:21,784 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:40:22,053 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:40:22,053 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:40:22,053 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:40:26,378 | INFO | HEARD: пика открой презентацию
+2026-05-13 18:40:26,379 | INFO | COMMAND: открой презентацию
+2026-05-13 18:40:26,380 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:40:26,476 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:40:26,476 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:40:26,477 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:40:29,718 | INFO | HEARD: пика видео
+2026-05-13 18:40:29,719 | INFO | COMMAND: видео
+2026-05-13 18:40:29,720 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:40:29,815 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:40:29,816 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:40:29,816 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:40:36,268 | INFO | HEARD: пика открой видео
+2026-05-13 18:40:36,269 | INFO | COMMAND: открой видео
+2026-05-13 18:40:36,271 | INFO | SPEAK: Запускаю Premiere Pro.
+2026-05-13 18:40:59,693 | INFO | HEARD: быстрый сайт
+2026-05-13 18:41:32,811 | INFO | HEARD: что ещё есть у нас
+2026-05-13 18:41:40,764 | INFO | HEARD: пика открой youtube
+2026-05-13 18:41:40,766 | INFO | COMMAND: открой youtube
+2026-05-13 18:41:40,768 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:41:41,039 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:41:41,040 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:41:41,042 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:41:51,149 | INFO | HEARD: пика который час
+2026-05-13 18:41:51,150 | INFO | COMMAND: который час
+2026-05-13 18:41:51,151 | INFO | SPEAK: Сейчас 18 часов 41 минут, 13.05.2026.
+2026-05-13 18:41:54,924 | INFO | HEARD: ага
+2026-05-13 18:42:06,957 | INFO | HEARD: пика закрой chrome
+2026-05-13 18:42:06,958 | INFO | COMMAND: закрой chrome
+2026-05-13 18:42:06,959 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:42:07,227 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:42:07,227 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:42:07,228 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:42:13,024 | INFO | HEARD: пика закрой
+2026-05-13 18:42:13,026 | INFO | COMMAND: закрой
+2026-05-13 18:42:13,027 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:42:13,298 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:42:13,298 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:42:13,298 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:42:16,806 | INFO | HEARD: пика закрой chrome
+2026-05-13 18:42:16,807 | INFO | COMMAND: закрой chrome
+2026-05-13 18:42:16,808 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-13 18:42:16,904 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-13 18:42:16,904 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-13 18:42:16,904 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-13 18:42:24,072 | INFO | HEARD: пика спать
+2026-05-13 18:42:24,073 | INFO | COMMAND: спать
+2026-05-13 18:42:24,075 | INFO | SPEAK: Перевожу компьютер в спящий режим.
+2026-05-13 18:42:31,008 | INFO | HEARD: пика сверни всё
+2026-05-13 18:42:31,011 | INFO | COMMAND: сверни всё
+2026-05-13 18:42:31,886 | INFO | SPEAK: Сэр, рабочий стол открыт. Я остаюсь на связи.
+2026-05-13 18:42:49,856 | INFO | HEARD: пика стоп
+2026-05-13 18:42:49,859 | INFO | COMMAND: стоп
+2026-05-13 18:42:49,860 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 18:44:34,340 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-15 18:44:34,352 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-15 18:44:43,233 | INFO | HEARD: пика открой игро
+2026-05-15 18:44:43,234 | INFO | COMMAND: открой игро
+2026-05-15 18:44:43,236 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:44:43,490 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:44:43,491 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:44:53,540 | INFO | HEARD: пика стоп
+2026-05-15 18:44:53,542 | INFO | COMMAND: стоп
+2026-05-15 18:47:44,457 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-15 18:47:44,458 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-15 18:47:44,510 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 18:47:52,518 | INFO | HEARD: пика открой режим игры
+2026-05-15 18:47:52,520 | INFO | COMMAND: открой режим игры
+2026-05-15 18:47:52,523 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 18:48:00,123 | INFO | HEARD: пика скрой всё
+2026-05-15 18:48:00,124 | INFO | COMMAND: скрой всё
+2026-05-15 18:48:00,996 | INFO | SPEAK: Сэр, рабочий стол открыт. Я остаюсь на связи.
+2026-05-15 18:48:01,564 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:15,116 | INFO | HEARD: пика скрой
+2026-05-15 18:48:15,118 | INFO | COMMAND: скрой
+2026-05-15 18:48:15,120 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:48:15,372 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:48:15,373 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:48:15,374 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:48:16,002 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:19,845 | INFO | HEARD: пика скройся
+2026-05-15 18:48:19,846 | INFO | COMMAND: скройся
+2026-05-15 18:48:19,847 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:48:19,933 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:48:19,934 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:48:19,934 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:48:20,508 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:23,880 | INFO | HEARD: пика открой режим
+2026-05-15 18:48:23,882 | INFO | COMMAND: открой режим
+2026-05-15 18:48:23,883 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:48:23,973 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:48:23,973 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:48:23,973 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:48:24,549 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:28,570 | INFO | HEARD: пика скройся
+2026-05-15 18:48:28,571 | INFO | COMMAND: скройся
+2026-05-15 18:48:28,572 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:48:28,656 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:48:28,657 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:48:28,661 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:48:29,211 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:32,599 | INFO | HEARD: пика режим отдыха
+2026-05-15 18:48:32,600 | INFO | COMMAND: режим отдыха
+2026-05-15 18:48:32,601 | INFO | SPEAK: Режим отдыха запущен. Приятного просмотра.
+2026-05-15 18:48:33,161 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:40,861 | INFO | HEARD: пика закрой google
+2026-05-15 18:48:40,863 | INFO | COMMAND: закрой google
+2026-05-15 18:48:40,864 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:48:41,119 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:48:41,120 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:48:41,120 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:48:41,684 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:44,559 | INFO | HEARD: не работает понятно
+2026-05-15 18:48:49,064 | INFO | HEARD: пикас открой
+2026-05-15 18:48:49,066 | INFO | COMMAND: с открой
+2026-05-15 18:48:49,067 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:48:49,323 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:48:49,324 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:48:49,325 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:48:49,930 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:48:54,141 | INFO | HEARD: пика громкость 50
+2026-05-15 18:48:54,142 | INFO | COMMAND: громкость 50
+2026-05-15 18:48:54,156 | ERROR | set_volume error: 'AudioDevice' object has no attribute 'Activate'
+2026-05-15 18:48:54,157 | INFO | SPEAK: Громкость установлена на 50 процентов.
+2026-05-15 18:48:59,498 | INFO | HEARD: пика громкость 30
+2026-05-15 18:48:59,500 | INFO | COMMAND: громкость 30
+2026-05-15 18:48:59,520 | ERROR | set_volume error: 'AudioDevice' object has no attribute 'Activate'
+2026-05-15 18:48:59,520 | INFO | SPEAK: Громкость установлена на 30 процентов.
+2026-05-15 18:49:04,120 | INFO | HEARD: громкость 90
+2026-05-15 18:49:08,954 | INFO | HEARD: пика громкость 90
+2026-05-15 18:49:08,955 | INFO | COMMAND: громкость 90
+2026-05-15 18:49:08,967 | ERROR | set_volume error: 'AudioDevice' object has no attribute 'Activate'
+2026-05-15 18:49:08,968 | INFO | SPEAK: Громкость установлена на 90 процентов.
+2026-05-15 18:49:17,620 | INFO | HEARD: пика яркость 50
+2026-05-15 18:49:17,622 | INFO | COMMAND: яркость 50
+2026-05-15 18:49:17,698 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-15 18:49:17,719 | INFO | SPEAK: Яркость установлена на 50 процентов.
+2026-05-15 18:49:22,798 | INFO | HEARD: пика яркость 70
+2026-05-15 18:49:22,800 | INFO | COMMAND: яркость 70
+2026-05-15 18:49:22,839 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-15 18:49:22,858 | INFO | SPEAK: Яркость установлена на 70 процентов.
+2026-05-15 18:49:27,337 | INFO | HEARD: 95
+2026-05-15 18:49:31,989 | INFO | HEARD: пика яркость 95
+2026-05-15 18:49:31,991 | INFO | COMMAND: яркость 95
+2026-05-15 18:49:32,030 | WARNING | exception parsing edid str for DISPLAY\BOE0C29\4&300ab7d&5&UID8388688_0 - EDIDParseError: parsed EDID returned invalid display name
+2026-05-15 18:49:32,052 | INFO | SPEAK: Яркость установлена на 95 процентов.
+2026-05-15 18:49:37,338 | INFO | HEARD: мне
+2026-05-15 18:49:40,469 | INFO | HEARD: хотя бы работает более correct
+2026-05-15 18:49:50,395 | INFO | HEARD: этот ассистент может работать
+2026-05-15 18:49:53,171 | INFO | HEARD: сказать пока это
+2026-05-15 18:49:56,031 | INFO | HEARD: плюс-минус будет
+2026-05-15 18:50:00,731 | INFO | HEARD: пика сто
+2026-05-15 18:50:00,733 | INFO | COMMAND: сто
+2026-05-15 18:50:00,734 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:50:01,067 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:50:01,068 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:50:01,070 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:50:01,693 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:50:10,134 | INFO | HEARD: на вайлд
+2026-05-15 18:50:13,455 | INFO | HEARD: пикассо
+2026-05-15 18:50:13,456 | INFO | COMMAND: ссо
+2026-05-15 18:50:13,457 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:50:13,716 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:50:13,717 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:50:13,718 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:50:14,339 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:50:23,846 | INFO | HEARD: no i do with rocket please verify that your promise corrector
+2026-05-15 18:50:28,559 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-15 18:50:28,561 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-15 18:50:28,603 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 18:50:36,674 | INFO | HEARD: пика стоп
+2026-05-15 18:50:36,676 | INFO | COMMAND: стоп
+2026-05-15 18:50:36,679 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 18:50:37,236 | ERROR | TTS error: No audio was received. Please verify that your parameters are correct.
+2026-05-15 18:52:12,722 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-15 18:52:12,723 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-15 18:52:12,769 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 18:52:12,769 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 18:52:23,908 | INFO | HEARD: ты говоришь
+2026-05-15 18:52:26,241 | INFO | HEARD: о'кей тогда сделаем так
+2026-05-15 18:52:31,750 | INFO | HEARD: пика громкость 50
+2026-05-15 18:52:31,752 | INFO | COMMAND: громкость 50
+2026-05-15 18:52:31,764 | ERROR | set_volume error: 'AudioDevice' object has no attribute 'Activate'
+2026-05-15 18:52:31,765 | INFO | SPEAK: Громкость установлена на 50 процентов.
+2026-05-15 18:52:31,765 | INFO | SPEAK: Громкость установлена на 50 процентов.
+2026-05-15 18:52:41,774 | INFO | HEARD: пика громкость 7
+2026-05-15 18:52:41,776 | INFO | COMMAND: громкость 7
+2026-05-15 18:52:41,791 | ERROR | set_volume error: 'AudioDevice' object has no attribute 'Activate'
+2026-05-15 18:52:41,791 | INFO | SPEAK: Громкость установлена на 7 процентов.
+2026-05-15 18:52:41,791 | INFO | SPEAK: Громкость установлена на 7 процентов.
+2026-05-15 18:52:49,105 | INFO | HEARD: громкость 7
+2026-05-15 18:52:54,206 | INFO | HEARD: пика громкость 7
+2026-05-15 18:52:54,207 | INFO | COMMAND: громкость 7
+2026-05-15 18:52:54,218 | ERROR | set_volume error: 'AudioDevice' object has no attribute 'Activate'
+2026-05-15 18:52:54,218 | INFO | SPEAK: Громкость установлена на 7 процентов.
+2026-05-15 18:52:54,219 | INFO | SPEAK: Громкость установлена на 7 процентов.
+2026-05-15 18:53:02,437 | INFO | HEARD: фото 17
+2026-05-15 18:53:06,837 | INFO | HEARD: пика расскажи про пушкина
+2026-05-15 18:53:06,838 | INFO | COMMAND: расскажи про пушкина
+2026-05-15 18:53:06,839 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:53:07,096 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:53:07,097 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:53:07,097 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:53:07,097 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:53:16,823 | INFO | HEARD: значит я по большей части опираюсь на лака
+2026-05-15 18:53:19,999 | INFO | HEARD: для дегенерации надо больше
+2026-05-15 18:53:21,652 | INFO | HEARD: чего
+2026-05-15 18:53:50,124 | INFO | HEARD: пика режим работы
+2026-05-15 18:53:50,126 | INFO | COMMAND: режим работы
+2026-05-15 18:53:50,128 | INFO | SPEAK: Режим работы активирован. Открываю Word, PowerPoint и Publisher.
+2026-05-15 18:53:50,128 | INFO | SPEAK: Режим работы активирован. Открываю Word, PowerPoint и Publisher.
+2026-05-15 18:54:03,182 | INFO | HEARD: где
+2026-05-15 18:54:21,121 | INFO | HEARD: пика режим
+2026-05-15 18:54:21,123 | INFO | COMMAND: режим
+2026-05-15 18:54:21,125 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:54:21,385 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:54:21,385 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:54:21,387 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:54:21,387 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:54:27,881 | INFO | HEARD: пика режим игры
+2026-05-15 18:54:27,883 | INFO | COMMAND: режим игры
+2026-05-15 18:54:27,884 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 18:54:27,884 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 18:54:39,070 | INFO | HEARD: пика скрой всё
+2026-05-15 18:54:39,072 | INFO | COMMAND: скрой всё
+2026-05-15 18:54:39,271 | INFO | SPEAK: Сэр, рабочий стол открыт. Я остаюсь на связи.
+2026-05-15 18:54:39,278 | INFO | SPEAK: Сэр, рабочий стол открыт. Я остаюсь на связи.
+2026-05-15 18:54:52,074 | INFO | HEARD: пика режим отдыха
+2026-05-15 18:54:52,075 | INFO | COMMAND: режим отдыха
+2026-05-15 18:54:52,076 | INFO | SPEAK: Режим отдыха запущен. Приятного просмотра.
+2026-05-15 18:54:52,076 | INFO | SPEAK: Режим отдыха запущен. Приятного просмотра.
+2026-05-15 18:55:02,832 | INFO | HEARD: нормально
+2026-05-15 18:55:05,091 | INFO | HEARD: прикол в том то что
+2026-05-15 18:55:19,321 | INFO | HEARD: сто
+2026-05-15 18:55:24,826 | INFO | HEARD: пика сто
+2026-05-15 18:55:24,827 | INFO | COMMAND: сто
+2026-05-15 18:55:24,828 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:55:25,166 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:55:25,166 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:55:25,167 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:55:25,168 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:55:31,510 | INFO | HEARD: пика стоп
+2026-05-15 18:55:31,511 | INFO | COMMAND: стоп
+2026-05-15 18:55:31,512 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 18:55:31,512 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 18:58:38,179 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-15 18:58:38,181 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-15 18:58:38,222 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 18:58:38,222 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 18:58:52,843 | INFO | HEARD: пика найди информацию про пушкина
+2026-05-15 18:58:52,844 | INFO | COMMAND: найди информацию про пушкина
+2026-05-15 18:58:52,845 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:58:53,103 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:58:53,113 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:59:05,068 | INFO | HEARD: пика найди информацию про ило
+2026-05-15 18:59:05,069 | INFO | COMMAND: найди информацию про ило
+2026-05-15 18:59:05,070 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:59:05,320 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:59:05,320 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:59:12,952 | INFO | HEARD: pikamo
+2026-05-15 18:59:16,826 | INFO | HEARD: пика ма
+2026-05-15 18:59:16,828 | INFO | COMMAND: ма
+2026-05-15 18:59:16,829 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:59:17,081 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:59:17,082 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:59:17,083 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:59:17,083 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:59:23,965 | INFO | HEARD: команда то понятливая
+2026-05-15 18:59:26,936 | INFO | HEARD: пика сделай скриншот
+2026-05-15 18:59:26,939 | INFO | COMMAND: сделай скриншот
+2026-05-15 18:59:27,064 | INFO | SPEAK: Скриншот сохранён в папке Изображения.
+2026-05-15 18:59:27,068 | INFO | SPEAK: Скриншот сохранён в папке Изображения.
+2026-05-15 18:59:32,030 | INFO | Screenshot saved: C:\Users\Админ\Pictures\Screenshot_2026-05-15_18-59-26.png
+2026-05-15 18:59:42,304 | INFO | HEARD: а как быстро сделать паприколли
+2026-05-15 18:59:49,934 | INFO | HEARD: понял крепика
+2026-05-15 18:59:49,935 | INFO | COMMAND: понял кре
+2026-05-15 18:59:49,936 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 18:59:50,185 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 18:59:50,186 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 18:59:50,186 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 18:59:50,186 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:00:05,287 | INFO | HEARD: пика режим игры
+2026-05-15 19:00:05,289 | INFO | COMMAND: режим игры
+2026-05-15 19:00:05,291 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 19:00:05,291 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 19:00:13,357 | INFO | HEARD: dc
+2026-05-15 19:00:15,229 | INFO | HEARD: открой всё
+2026-05-15 19:00:19,450 | INFO | HEARD: пика скрой
+2026-05-15 19:00:19,453 | INFO | COMMAND: скрой
+2026-05-15 19:00:19,456 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:00:19,719 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 19:00:19,720 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 19:00:19,721 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:00:19,722 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:00:25,465 | INFO | HEARD: скрой
+2026-05-15 19:00:30,927 | INFO | HEARD: вика скрой всё
+2026-05-15 19:00:36,066 | INFO | HEARD: пика скрой
+2026-05-15 19:00:36,067 | INFO | COMMAND: скрой
+2026-05-15 19:00:36,068 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:00:36,401 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 19:00:36,402 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 19:00:36,403 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:00:36,403 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:00:44,387 | INFO | HEARD: а ты даёшь конечно
+2026-05-15 19:00:47,409 | INFO | HEARD: потому что он
+2026-05-15 19:00:50,479 | INFO | HEARD: так не должно быть
+2026-05-15 19:00:53,244 | INFO | HEARD: пика стоп
+2026-05-15 19:00:53,247 | INFO | COMMAND: стоп
+2026-05-15 19:00:53,249 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 19:00:53,251 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 19:04:38,622 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 400 Bad Request"
+2026-05-15 19:04:38,623 | ERROR | Gemini init error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-05-15 19:04:38,665 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 19:04:38,665 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 19:04:48,589 | INFO | HEARD: пика режим игры
+2026-05-15 19:04:48,591 | INFO | COMMAND: режим игры
+2026-05-15 19:04:48,593 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 19:04:48,593 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 19:04:58,045 | INFO | HEARD: пика скрой
+2026-05-15 19:04:58,047 | INFO | COMMAND: скрой
+2026-05-15 19:04:58,049 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:04:58,307 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 19:04:58,308 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 19:04:58,308 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:04:58,309 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:05:04,889 | INFO | HEARD: пика скрой всё
+2026-05-15 19:05:04,890 | INFO | COMMAND: скрой всё
+2026-05-15 19:05:04,893 | INFO | SPEAK: Сэр, рабочий стол открыт. Я остаюсь на связи.
+2026-05-15 19:05:04,894 | INFO | SPEAK: Сэр, рабочий стол открыт. Я остаюсь на связи.
+2026-05-15 19:05:14,969 | INFO | HEARD: пика скрой
+2026-05-15 19:05:14,971 | INFO | COMMAND: скрой
+2026-05-15 19:05:14,973 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:05:15,230 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 19:05:15,231 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 19:05:15,232 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:05:15,233 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:05:20,951 | INFO | HEARD: отдыха
+2026-05-15 19:05:24,920 | INFO | HEARD: пика режим отдыха
+2026-05-15 19:05:24,922 | INFO | COMMAND: режим отдыха
+2026-05-15 19:05:24,924 | INFO | SPEAK: Режим отдыха запущен. Приятного просмотра.
+2026-05-15 19:05:24,924 | INFO | SPEAK: Режим отдыха запущен. Приятного просмотра.
+2026-05-15 19:05:48,562 | INFO | HEARD: пикассо
+2026-05-15 19:05:48,565 | INFO | COMMAND: ссо
+2026-05-15 19:05:48,568 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:05:48,900 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 19:05:48,901 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 19:05:48,902 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:05:48,902 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:05:55,504 | INFO | HEARD: пикассо
+2026-05-15 19:05:55,505 | INFO | COMMAND: ссо
+2026-05-15 19:05:55,506 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:05:55,773 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/%7Bmodel%7D:generateContent "HTTP/1.1 404 Not Found"
+2026-05-15 19:05:55,774 | ERROR | Gemini error: 404 Not Found. {'message': '', 'status': 'Not Found'}
+2026-05-15 19:05:55,774 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:05:55,775 | INFO | SPEAK: Сэр, не смог получить ответ.
+2026-05-15 19:06:17,861 | INFO | HEARD: цена
+2026-05-15 19:06:19,975 | INFO | HEARD: тара тара
+2026-05-15 19:11:08,720 | INFO | HEARD: хотя надо
+2026-05-15 19:11:12,416 | INFO | HEARD: надо переписать
+2026-05-15 19:13:09,382 | INFO | HEARD: sorry sorry
+2026-05-15 19:13:11,615 | INFO | HEARD: пика стоп
+2026-05-15 19:13:11,616 | INFO | COMMAND: стоп
+2026-05-15 19:13:11,618 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 19:13:11,618 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 19:15:22,667 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+2026-05-15 19:15:22,681 | INFO | Gemini model: gemini-2.5-flash
+2026-05-15 19:15:22,729 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 19:15:33,676 | INFO | HEARD: пика режим игры
+2026-05-15 19:15:33,679 | INFO | COMMAND: режим игры
+2026-05-15 19:15:33,680 | INFO | SPEAK: Игровой режим. Запускаю Steam и Discord.
+2026-05-15 19:15:43,354 | INFO | HEARD: пика скрой
+2026-05-15 19:15:43,356 | INFO | COMMAND: скрой
+2026-05-15 19:15:43,357 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:15:47,955 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-15 19:15:47,959 | INFO | SPEAK: Что спрятать? Что случилось?
+Или мне самому спрятаться?
+2026-05-15 19:15:59,608 | INFO | HEARD: какая ты смешной
+2026-05-15 19:16:01,964 | INFO | HEARD: пика сверни
+2026-05-15 19:16:01,966 | INFO | COMMAND: сверни
+2026-05-15 19:16:01,967 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:16:14,061 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-15 19:16:14,065 | INFO | SPEAK: Что именно вы хотите, чтобы я "свернул"?
+
+Может быть, вы имеете в виду:
+
+1.  **Сжать или суммировать информацию:** Если у нас был длинный текст или разговор, я могу выделить главные мысли.
+2.  **Свернуть текущую тему/диалог:** Закончить обсуждение или перейти к чему-то новому.
+3.  **Уменьшить детализацию:** Предоставить более краткий ответ.
+
+Пожалуйста, уточните, что вы имеете в виду!
+2026-05-15 19:17:01,906 | INFO | HEARD: ладно пика стоп
+2026-05-15 19:17:01,908 | INFO | COMMAND: ладно  стоп
+2026-05-15 19:17:01,910 | INFO | SPEAK: Слушаюсь, сэр. Выключаюсь.
+2026-05-15 19:18:32,465 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+2026-05-15 19:18:32,474 | INFO | Gemini model: gemini-2.5-flash
+2026-05-15 19:18:32,520 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 19:18:41,765 | INFO | HEARD: пикассо
+2026-05-15 19:18:41,767 | INFO | COMMAND: ссо
+2026-05-15 19:18:41,768 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:18:46,003 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-15 19:18:46,007 | INFO | SPEAK: "ССО" может означать несколько вещей, в зависимости от контекста:
+
+1.  **Силы специальных операций** (наиболее распространенное значение в военном и новостном контексте).
+2.  **Служба собственной безопасности** (например, в какой-либо организации).
+3.  Начало слова, например:
+    *   **ссора**
+    *   **ссориться**
+    *   **ссобой** (как в "взять ссобой")
+    *   **ссобойка** (еда, взятая с собой
+2026-05-15 19:18:58,430 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+2026-05-15 19:18:58,442 | INFO | Gemini model: gemini-2.5-flash
+2026-05-15 19:18:58,483 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 19:19:08,653 | INFO | HEARD: пика сон
+2026-05-15 19:19:08,655 | INFO | COMMAND: сон
+2026-05-15 19:19:08,656 | INFO | SPEAK: Перевожу компьютер в спящий режим.
+2026-05-15 19:19:18,058 | INFO | HEARD: давай
+2026-05-15 19:19:25,856 | INFO | HEARD: перезагрузка
+2026-05-15 19:19:34,358 | INFO | HEARD: пере
+2026-05-15 19:19:39,682 | INFO | HEARD: ты что меня напрягаешь пика
+2026-05-15 19:19:39,685 | INFO | COMMAND: ты что меня напрягаешь
+2026-05-15 19:19:39,686 | INFO | AFC is enabled with max remote calls: 10.
+2026-05-15 19:19:46,536 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-05-15 19:19:46,539 | INFO | SPEAK: Ой, извините! Мне очень жаль, если мои слова или действия вызывают у вас напряжение.
+
+Моя цель – наоборот, помогать и быть полезным. Могли бы вы, пожалуйста, уточнить, что именно вас напрягает или что я сказал(а)/сделал(а) не так? Я постараюсь исправить это.
+2026-05-15 19:20:04,833 | INFO | HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+2026-05-15 19:20:04,843 | INFO | Gemini model: gemini-2.5-flash
+2026-05-15 19:20:04,883 | INFO | SPEAK: Yes sir. Все системы на связи. Жду вашей команды.
+2026-05-15 19:20:14,202 | INFO | HEARD: пока я не скажу
+2026-05-15 19:20:16,539 | INFO | HEARD: определённое слово
+2026-05-15 19:20:23,354 | INFO | HEARD: так что мне как-то пофиг даже пока я не скажу
+2026-05-15 19:20:26,824 | INFO | HEARD: вот так вот будет всё
+2026-05-15 19:20:31,190 | INFO | HEARD: всегда активен
+2026-05-15 19:20:36,180 | INFO | HEARD: ага и он по сути укрощает
+2026-05-15 19:20:39,495 | INFO | HEARD: да
+2026-05-15 19:20:41,718 | INFO | HEARD: да
+2026-05-15 19:20:48,541 | INFO | HEARD: пика перезагрузка
+2026-05-15 19:20:48,544 | INFO | COMMAND: перезагрузка
+2026-05-15 19:20:48,545 | INFO | SPEAK: Перезагружаю компьютер.

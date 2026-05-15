@@ -1,0 +1,10 @@
+google-generativeai
+pyttsx3
+SpeechRecognition
+Pillow
+psutil
+pyautogui
+pygetwindow
+python-dotenv
+pycaw
+screen-brightness-control

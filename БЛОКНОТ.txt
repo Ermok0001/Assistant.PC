@@ -1,0 +1,247 @@
+import os
+import subprocess
+import time
+import threading
+import sys
+import re
+import queue
+import tkinter as tk
+import psutil
+import pyautogui  
+import pygetwindow as gw  # NEW: Для надежного управления окнами
+from datetime import datetime
+from PIL import Image, ImageTk
+import speech_recognition as sr
+import pyttsx3
+import screen_brightness_control as sbc
+from google import genai
+from ctypes import cast, POINTER
+from comtypes import CLSCTX_ALL
+from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
+
+# === КОНФИГУРАЦИЯ ===
+API_KEY = "AIzaSyDn1b2QhgwOvGkZoR2m6ZJPMqsq7n0lOqo"
+WAKE_WORD = "пика"
+
+engine = pyttsx3.init()
+engine.setProperty('rate', 190)
+speech_queue = queue.Queue()
+
+def tts_worker():
+    while True:
+        text = speech_queue.get()
+        if text is None: break
+        engine.say(text)
+        engine.runAndWait()
+        speech_queue.task_done()
+
+threading.Thread(target=tts_worker, daemon=True).start()
+
+def speak(text):
+    print(f"🤖 Пика: {text}")
+    speech_queue.put(text)
+
+def resource_path(relative_path):
+    try: base_path = sys._MEIPASS
+    except Exception: base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+# --- ПУТИ К ЯРЛЫКАМ (ВАШИ) ---
+STEAM_LNK = r'C:\Users\Админ\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Steam\Steam.lnk'
+DISCORD_LNK = r'C:\Users\Админ\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk'
+
+# --- ЛОКАЛЬНАЯ БАЗА ПРОГРАММ ---
+APPS_DATA = {
+    "ворд": ("Word", "start winword", "WINWORD.EXE"),
+    "эксель": ("Excel", "start excel", "EXCEL.EXE"),
+    "телеграм": ("Telegram", "start telegram", "Telegram.exe"),
+    "хром": ("Chrome", "start chrome", "chrome.exe"),
+    "стим": ("Steam", STEAM_LNK, "steam.exe"),
+    "дискорд": ("Discord", DISCORD_LNK, "Discord.exe"),
+    "блокнот": ("Блокнот", "notepad", "notepad.exe"),
+    "калькулятор": ("Калькулятор", "calc", "calc.exe"),
+    "фотошоп": ("Photoshop", "start photoshop", "Photoshop.exe"),
+    "проводник": ("Проводник", "explorer", "explorer.exe")
+}
+
+ADOBE_DATA = {
+    "видео": ("Premiere Pro", r"C:\Program Files\Adobe\Adobe Premiere Pro 2025\Adobe Premiere Pro.exe", "Adobe Premiere Pro.exe"),
+    "фото": ("Lightroom", r"C:\Program Files\Adobe\Adobe Lightroom Classic\Lightroom.exe", "Lightroom.exe"),
+    "эффект": ("After Effects", r"C:\Program Files\Adobe\Adobe After Effects 2025\Support Files\AfterFX.exe", "AfterFX.exe")
+}
+
+# --- ВИЗУАЛИЗАЦИЯ (АВАТАР) ---
+
+root, label = None, None
+
+def update_avatar_state(state):
+    if not root or not label: return
+    if state == "idle":
+        root.config(bg="black"); label.config(bg="black")
+        root.attributes("-transparentcolor", "black")
+    elif state == "listening":
+        root.config(bg="#00FF00"); label.config(bg="#00FF00")
+        root.attributes("-transparentcolor", "")
+    elif state == "working":
+        root.config(bg="#8A2BE2"); label.config(bg="#8A2BE2")
+        root.attributes("-transparentcolor", "")
+    root.update()
+
+def start_avatar():
+    global root, label
+    root = tk.Tk(); root.overrideredirect(True); root.attributes("-topmost", True)
+    root.attributes("-transparentcolor", "black"); root.config(bg="black")
+    try:
+        img = Image.open(resource_path("pike.png")).resize((150, 150))
+        photo = ImageTk.PhotoImage(img)
+        label = tk.Label(root, image=photo, bg="black", bd=0); label.image = photo; label.pack()
+    except: label = tk.Label(root, text="⚡", font=("Arial", 40), bg="black", fg="yellow"); label.pack()
+    sw, sh = root.winfo_screenwidth(), root.winfo_screenheight()
+    root.geometry(f"150x150+{sw-160}+{sh-200}"); root.mainloop()
+
+# --- СИСТЕМНЫЕ ФУНКЦИИ ---
+def get_system_status():
+    cpu = psutil.cpu_percent(); ram = psutil.virtual_memory().percent
+    return f"Процессор: {cpu}%. Память: {ram}%."
+
+def set_volume_local(level):
+    try:
+        devices = AudioUtilities.GetSpeakers()
+        interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
+        volume = cast(interface, POINTER(IAudioEndpointVolume))
+        volume.SetMasterVolumeLevelScalar(level / 100.0, None)
+    except: pass
+
+# --- ГЛАВНЫЙ ОБРАБОТЧИК ---
+def process_task(client, model_id, task):
+    if not task: return
+    task_lower = task.lower().strip()
+    update_avatar_state("working")
+
+    # 1. ВЫХОД ИЗ ПРОГРАММЫ
+    if any(word == task_lower or word in task_lower for word in ["стоп", "выключись", "отключись"]):
+        speak("Слушаюсь, сэр. Выключаюсь."); time.sleep(1); os._exit(0)
+
+    # 2. ПИТАНИЕ ПК
+    if "заверши работу" in task_lower:
+        speak("Завершаю работу системы."); os.system("shutdown /s /t 1")
+    if "перезагрузи" in task_lower:
+        speak("Перезагружаю систему."); os.system("shutdown /r /t 1")
+    if any(word in task_lower for word in ["ложись спать", "сон", "спящий режим"]):
+        speak("Приятных снов, сэр.")
+        subprocess.Popen('powershell.exe -Command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Application]::SetSuspendState([System.Windows.Forms.PowerState]::Suspend, $false, $false)"', shell=True)
+        update_avatar_state("idle"); return
+
+    # 3. СКРИНШОТ
+    if "скриншот" in task_lower:
+        now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        path = os.path.join(os.path.expanduser("~"), "Pictures", f"Screenshot_{now}.png")
+        pyautogui.screenshot(path)
+        speak("Скриншот сохранен."); update_avatar_state("idle"); return
+
+    # 4. УПРАВЛЕНИЕ ОКНАМИ (Улучшенный метод через gw)
+    if any(x in task_lower for x in ["скрой всё", "сверни всё", "покажи рабочий стол"]):
+        
+    # Метод 1: Попытка через горячие клавиши
+        pyautogui.hotkey('win', 'd')
+
+    # Метод 2: Принудительное сворачивание всех видимых окон
+        for window in gw.getAllWindows():
+            if window.title != "" and window.visible:
+                try: window.minimize()
+                except: pass
+        speak("Сэр, все окна свернуты."); update_avatar_state("idle"); return
+
+    if "закрой окно" in task_lower or "закрыть окно" in task_lower:
+        pyautogui.hotkey('alt', 'f4')
+        speak("Окно закрыто."); update_avatar_state("idle"); return
+
+    # 5. ЗАМЕТКИ
+    if "запиши" in task_lower:
+        note = task_lower.replace("запиши заметку", "").replace("запиши", "").strip()
+        if note:
+            desktop = os.path.join(os.path.expanduser("~"), "Desktop", "pika_notes.txt")
+            with open(desktop, "a", encoding="utf-8") as f:
+                f.write(f"[{datetime.now().strftime('%H:%M')}] {note}\n")
+            speak("Заметка сохранена."); update_avatar_state("idle"); return
+
+    # 6. МОНИТОРИНГ
+    if any(x in task_lower for x in ["статус", "состояние", "система"]):
+        speak(get_system_status()); update_avatar_state("idle"); return
+
+    # 7. РЕЖИМЫ
+    if "режим работы" in task_lower:
+        speak("Режим работы активирован."); subprocess.Popen("start winword", shell=True)
+        update_avatar_state("idle"); return
+    if "режим отдыха" in task_lower:
+        speak("Режим отдыха запущен."); os.startfile(STEAM_LNK)
+        update_avatar_state("idle"); return
+    if "режим игры" in task_lower:
+        speak("Игровой режим. Запускаю Стим и Дискорд."); os.startfile(STEAM_LNK); os.startfile(DISCORD_LNK)
+        update_avatar_state("idle"); return
+
+    # 8. ЗАКРЫТИЕ ПРОГРАММ
+    if any(x in task_lower for x in ["закрой", "заверши"]):
+        closed = False
+        for k, d in {**APPS_DATA, **ADOBE_DATA}.items():
+            if k in task_lower:
+                subprocess.run(f"taskkill /F /IM \"{d[2]}\" /T", shell=True, capture_output=True)
+                speak(f"Программа {d[0]} закрыта."); closed = True
+        if closed: update_avatar_state("idle"); return
+
+    # 9. ОТКРЫТИЕ ПРОГРАММ
+    if any(x in task_lower for x in ["открой", "запусти"]):
+        opened = False
+        for k, d in APPS_DATA.items():
+            if k in task_lower:
+                if "\\" in d[1]: os.startfile(d[1])
+                else: subprocess.Popen(d[1], shell=True)
+                speak(f"Открываю {d[0]}."); opened = True
+        for k, d in ADOBE_DATA.items():
+            if k in task_lower and os.path.exists(d[1]):
+                subprocess.Popen(f'"{d[1]}"', shell=True); speak(f"Запускаю {d[0]}."); opened = True
+        if opened: update_avatar_state("idle"); return
+
+    # 10. ГРОМКОСТЬ/ЯРКОСТЬ
+    if any(x in task_lower for x in ["громкость", "тише", "громче"]):
+        if "тише" in task_lower: set_volume_local(20)
+        elif "громче" in task_lower: set_volume_local(80)
+        speak("Громкость изменена."); update_avatar_state("idle"); return
+    if "яркость" in task_lower:
+        num = re.findall(r'\d+', task_lower)
+        br = int(num[0]) if num else 50
+        sbc.set_brightness(br); speak(f"Яркость: {br}%."); update_avatar_state("idle"); return
+
+    # 11. ИИ (КРАТКИЙ ОТВЕТ)
+    if client:
+        try:
+            response = client.models.generate_content(model=model_id, contents=f"Кратко: {task}")
+            speak(response.text)
+        except: speak("Ошибка связи.")
+    update_avatar_state("idle")
+
+def listen():
+    r = sr.Recognizer(); mic = sr.Microphone()
+    r.pause_threshold = 0.5
+    with mic as source:
+        try:
+            audio = r.listen(source, timeout=None, phrase_time_limit=5)
+            return r.recognize_google(audio, language="ru-RU").lower()
+        except: return None
+
+if __name__ == "__main__":
+    client, MODEL_ID = None, None
+    try:
+        client = genai.Client(api_key=API_KEY)
+        MODEL_ID = next(m.name for m in list(client.models.list()) if "flash" in m.name).split('/')[-1]
+    except: pass
+
+    threading.Thread(target=start_avatar, daemon=True).start()
+    speak("Yes, sir. Все системы на связи.")
+
+    while True:
+        v = listen()
+        if v and WAKE_WORD in v:
+            update_avatar_state("listening")
+            process_task(client, MODEL_ID, v.replace(WAKE_WORD, "").strip())
+        time.sleep(0.01)
